@@ -1,0 +1,574 @@
+body {
+	color: black;
+	background-color: #F5F5F5;
+	font-family: 'Open Sans', sans-serif;
+}
+
+ h1 {
+ 	color: black;
+ 	font-family: Arvo; 
+ 	font-size: 48px ;
+ }
+
+ a {
+	color : #1337FA;
+	text-decoration: none ;
+}
+
+a:hover {
+	text-decoration: underline;
+	background-color: grey;
+}
+
+#container {
+	text-align: center;
+
+}
+
+.achievement {
+
+	color : black;
+	background-color: white;
+	border-top : 2px solid rgba(0,0,0,0.2);
+	padding: 30px;
+	text-align: left;
+}
+
+
+
+
+
+.titre {
+	font-style : italic;
+	font-family: "Courier New", Courier, monospace;
+	margin-bottom: 100px;
+	text-align: left;
+
+}
+
+.soustitre {
+	text-decoration: none;
+	font-weight: bold;
+	text-align: center;
+	font-size: 120%;
+}
+
+.soussoustitre{
+	font-size:80%;
+	font-style: italic;
+}
+.logo {
+	width : 60px;
+	height: 60px;
+}
+
+#lifbb {
+	width : 200px ;
+	height : 70px;
+}
+
+#hec {
+	width : 200px ;
+	height : 70px;
+}
+
+#paris1 {
+	width : 200px ;
+	height : 70px;
+}
+
+/*	background-image: url(../images/fondparis.jpg);*/
+#header {
+	text-align: center;
+	padding: 5px;
+	border-bottom: 1px solid rgba(0,0,0,.1);
+	background-color : rgb(154,174,212);
+	background-size: 100% 100%;
+	height: 680px;
+}
+
+#header h1 {
+	font-size: 70px;
+	font-family: "Courier New", Courier, monospace;
+	color: black;
+
+}
+
+#header p{
+	color: white;
+}
+
+#nav {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	height: 10px;
+
+}
+
+#nav > li {
+	display: inline;
+	padding: 2em;
+
+}
+
+.nav-item {
+	font-family: "Courier New", Courier, monospace;
+}
+
+.navbar-brand {
+				font-family: "Courier New", Courier, monospace;
+				font-weight: bold;
+}
+
+#nav > li > a {
+	text-decoration: none ;
+	color :rgb(61, 61, 92);
+	font-weight: bold;
+
+}
+
+.progress {
+	margin: 30px auto;
+	font-weight: bold;
+}
+
+#stripe1 {
+	background-color: blue;
+	color : white;
+}
+#stripe2 {
+	background-color: white;
+	color : white;
+}
+#stripe3 {
+	background-color: black;
+	color : white;
+}
+#stripe4 {
+	background-color: blue;
+	color : white;
+}
+#stripe5 {
+	background-color: blue;
+	color : white;
+}
+#stripe6 {
+	background-color: blue;
+	color : white;
+}
+
+.topline {
+	color : white;
+	font-weight: bold;
+}
+
+#description p{
+		color : black;
+
+	font-style: italic;
+}
+
+#nom {
+	margin : 60px auto;
+}
+
+#photo {
+	margin : 60px auto;
+}
+
+
+#auxiliaireété {
+
+	border : 2px solid rgba(0,0,0,.2);
+	margin : 0px auto;
+	border-radius: 5px 5px 5px 5px;
+	box-shadow: 1px 1px 12px #555;
+	background-color: rgb(242, 242, 242);
+	height: 400px;
+	text-align: center;
+	padding-top: 100px;
+}
+
+#arbitre {
+	border : 2px solid rgba(0,0,0,.2);
+	margin : 20 px auto;
+	border-radius: 5px 5px 5px 5px;
+	box-shadow: 1px 1px 12px #555;
+	width: 50px;
+	background-color: rgb(242, 242, 242);
+		text-align: center;
+	padding-top: 100px;
+
+}
+
+
+
+#Experiences {
+	background-color: rgb(242, 242, 242);
+	height: 2200px
+}
+
+#Formation {
+	height: 500px;
+	padding-bottom: auto;
+}
+
+
+
+.centrer {
+	margin: 0 auto;
+}
+
+#compétences {
+	height: 400px;
+	padding-top: 20px;
+	background-color: rgb(242, 242, 242);
+}
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  height : auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #FF9F55;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: -25.5%;
+}
+
+/* Place the container to the right */
+.right {
+  left: 25.5%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -20px;
+}
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+}
+
+#Formations2 {
+	display : flex;
+	justify-content: center;
+	flex-flow: row wrap;
+}
+
+#intérêts {
+	display : flex;
+	justify-content: center;
+
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media (max-width: 600px) {
+/* Place the timelime to the left */
+  .timeline::after {
+    left: 31px;
+    display: none;
+  }
+
+/* Full-width containers */
+  .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+/* Make sure that all arrows are pointing leftwards */
+  .container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+    display :none;
+  }
+
+/* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+    left: 15px;
+    display : none;
+  }
+
+/* Make all right containers behave like the left ones */
+  .right {
+    left: 0%;
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+  .left {
+  	left : 0%;
+  	width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+
+  .gauche {
+	left : 0%;
+	width : 100%;
+	display : block;
+	}
+
+  .droite {
+	left : 0%;
+	width : 100%;
+	}
+
+.centre {
+		left : 0%;
+	width : 100%;
+    }
+
+   #etsinon.achievement{
+   	height : 1700px;
+   }
+
+
+#Experiences{
+  	height: 1000px;
+  }
+
+  #Formations2 {
+	display : flex;
+	justify-content: center;
+	flex-flow: column;
+	}
+
+	#Formation.achievement {
+		height : 1600Px;
+
+	} 
+
+}
+
+@media (max-width: 1200px) {
+	#Experiences {
+		height : 2400px;
+	}
+
+	#Formation {
+		height : 900Px;
+
+	} 
+
+	 #etsinon.achievement {
+   	height : 700px;
+   }
+
+
+}
+
+
+@media (max-width: 920px) {
+	#Experiences {
+		height : 3100px;
+	}
+
+	#Formation {
+		height : 1200Px;
+
+	} 
+		 #etsinon.achievement {
+   	height : 1000px;
+   }
+
+
+
+}
+
+@media (max-width: 500px) {
+	#Experiences {
+		height : 2300px;
+	}
+
+	#Formation.achievement {
+		height : 1800Px;
+		justify-content: center;
+		align-items: center;
+	} 
+
+	#Formations2.achievement {
+		display : flex;
+		justify-content: center;
+		align-items : center;
+
+	}
+		.droite{
+		left : 0%;
+	}
+
+		 #etsinon.achievement {
+   	height : 1100px;
+   }
+
+   a.btn.btn-primary {
+   	display : none;
+   }
+}
+
+
+
+.gauche { 
+	text-align: center;
+	   float: left;
+   width: 30%; 
+}
+.droite { 
+	text-align: center;
+	  float: left;
+ 
+   width: 30%; 
+   margin-right: 15px;
+}
+.centre { 
+   text-align: center;
+      float: left;
+   width: 30%;
+   margin-left: 50px;
+   margin-right: 50px;
+}
+
+.fas {
+	font-size: 30px;
+	margin-bottom: 20px;
+	color: blue;
+}
+
+#hpr {
+	width : 130px;
+}
+
+
+#langues {
+	float: left;
+	width: 45%;
+}
+
+#autres {
+	float: right;
+	width: 45%;
+}
+
+#carte h2{
+	text-align: left;
+	font-style : italic;
+	margin-top: 200px;
+	font-family: "Courier New", Courier, monospace;
+	font-size: 20px;
+}
+
+.
+.fonction {
+	font-size: 100%;
+
+}
+
+
+#etsinon {
+	height : 600px;
+}
+
+#layw {
+	height : 100px;
+	width : 100px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+ul {
+	list-style-type: none;
+}
+
+#coordonnes {
+	background-color: rgb(242, 242, 242);
+	height: 200px;
+}
+
+#contact {
+		display : flex;
+	justify-content: center;
+	flex-wrap: nowrap;
+}
+
+
+a : hover 
